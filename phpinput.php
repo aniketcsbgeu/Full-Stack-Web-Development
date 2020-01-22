@@ -1,3 +1,6 @@
+<?php
+ include 'config.php';
+?>
 <?php 
 if (isset($_POST['btn'])){
 	echo "dear, ".$_POST["username"]." your details are"."<br> ";
