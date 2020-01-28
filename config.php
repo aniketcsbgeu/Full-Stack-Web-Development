@@ -3,9 +3,9 @@ $hostName = 'localhost';
 $userName = 'root';
 $password = '';
 $databaseName = 'secb2020';
+$conn=mysqli_connect($hostName, $userName, $password, $databaseName);
     
-    
-if (mysqli_connect($hostName, $userName, $password, $databaseName)){
+if ($conn){
     echo 'Connection Successful!';
 }
 else{
