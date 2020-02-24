@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Random image</title>
+</head>
+<body>
+    <img src="1.png" id="image" width="500">
+    
+    </div>
+    <input type="button" id="btn" onclick="randomImageGeneration()" value="off">
+    <script type="text/javascript">
+        function randomImageGeneration()
+        {
+            var v=document.getElementById('btn').value;
+            if(v=="off"){
+                  document.getElementById('image').src="2.png";
+                 document.getElementById('btn').value="on";
+               
+            }
+            else if(v=="on")
+            {
+               document.getElementById('image').src="1.png";
+                document.getElementById('btn').value="off";
+            }
+            
+        }
+    </script>
+</body>
+</html>
